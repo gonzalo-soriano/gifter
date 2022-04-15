@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;700&display=swap" rel="stylesheet">
+    <title>Mis listas</title>
+</head>
+
+<body>
+    <!--Empieza header de la página. Mensaje de bienvenida y logo que direcciona al inicio siempre-->
+    <header class="header">
+        <p class="header__tagline" id="tagline">
+            <strong>Gifter</strong>
+        </p>
+        <!--<a href="#menu"><img src="./images/menu.png" alt="menu" id="menu_icon"></a>-->
+        <img src="../images/menu.png" alt="menu" id="menu_icon">
+        <img src="../images/logo.jpeg" alt="logo" id="logo">
+        <input type="text" placeholder="Buscar" id="searchbar">
+        <div id="admin">
+            <img src="../images/notificacion.png" alt="notificacion">
+            <img src="../images/inbox.png" alt="inbox">
+            <img src="../images/usuario.png" alt="usuario">
+        </div>
+        <!--<p class="header__description" id="description">
+            La primera página web donde podrás <strong>compartir tus gustos y listas de regalo</strong> con tus amigos
+            así como <strong>ver lo que ellos desean</strong>, haciendo la acción de regalar algo más sencilla y
+            realista
+        </p> -->
+    </header>
+
+    <nav class="nav" id="menu">
+        <!--Aquí comienza el menú de navegación (lista no ordenada). Este se replica en todas las páginas y contiene enlaces relativos entre sí.-->
+        <ul>
+            <li class="nav__descubrir">
+                <p><a href="../../index.html">Descubrir</a></p>
+            </li>
+            <li class="nav__listas">
+                <p><a href="./mis_listas.html">Mis listas</a></p>
+                <!--Aquí se encuentra un archivo multimedia iframe.-->
+            </li>
+            <li class="nav__amigos">
+                <p><a href="./amigos.html">Amigos</a></p>
+                <!--En esta página se encuentra la tabla.-->
+            </li>
+            <li class="nav__perfil">
+                <p><a href="./perfil.html">Perfil</a></p>
+            </li>
+            <li class="nav__contacto">
+                <p><a href="./contacto.html">Contacto</a></p>
+                <!--En esta página se encuentra el formulario.-->
+            </li>
+        </ul>
+    </nav>
+
+    <section class="font">
+        <h4>Aquí podrás visualizar tus listas de regalo.</h4>
+        <p>Ve nuestro tutorial de cómo crear listas.</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/xIDLs8fN1TU" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+
+    </section>
+
+    <br>
+
+    <footer id="footer">
+        <h5>Redes sociales</h5>
+        <small>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates, quod. Corporis sunt hic libero
+            atque cumque ut nam ipsa obcaecati illo aspernatur adipisci ullam, minus deleniti accusamus? Consequatur,
+            sit earum.</small>
+    </footer>
+
+</body>
+
+</html>

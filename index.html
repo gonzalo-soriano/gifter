@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;700&display=swap" rel="stylesheet">
+    <title>Gifter</title>
+</head>
+
+<body>
+    <!--Empieza header de la página. Mensaje de bienvenida y logo que direcciona al inicio siempre-->
+    <header class="header">
+        <p class="header__tagline" id="tagline">
+            <strong>Gifter</strong>
+        </p>
+        <!--<a href="#menu"><img src="./images/menu.png" alt="menu" id="menu_icon"></a>-->
+        <img src="./assets/images/menu.png" alt="menu" id="menu_icon">
+        <img src="./assets/images/logo.jpeg" alt="logo" id="logo">
+        <input type="text" placeholder="Buscar" id="searchbar">
+        <div id="admin">
+            <img src="./assets/images/notificacion.png" alt="notificacion">
+            <img src="./assets/images/inbox.png" alt="inbox">
+            <img src="./assets/images/usuario.png" alt="usuario">
+        </div>
+        <!--<p class="header__description" id="description">
+            La primera página web donde podrás <strong>compartir tus gustos y listas de regalo</strong> con tus amigos
+            así como <strong>ver lo que ellos desean</strong>, haciendo la acción de regalar algo más sencilla y
+            realista
+        </p> -->
+    </header>
+
+    <nav class="nav" id="menu">
+        <!--Aquí comienza el menú de navegación (lista no ordenada). Este se replica en todas las páginas y contiene enlaces relativos entre sí.-->
+        <ul>
+            <li class="nav__descubrir">
+                <p><a href="index.html">Descubrir</a></p>
+            </li>
+            <li class="nav__listas">
+                <p><a href="./assets/pages/mis_listas.html">Mis listas</a></p>
+                <!--Aquí se encuentra un archivo multimedia iframe.-->
+            </li>
+            <li class="nav__amigos">
+                <p><a href="./assets/pages/amigos.html">Amigos</a></p>
+                <!--En esta página se encuentra la tabla.-->
+            </li>
+            <li class="nav__perfil">
+                <p><a href="./assets/pages/perfil.html">Perfil</a></p>
+            </li>
+            <li class="nav__contacto">
+                <p><a href="./assets/pages/contacto.html">Contacto</a></p>
+                <!--En esta página se encuentra el formulario.-->
+            </li>
+        </ul>
+    </nav>
+
+    <section id=intro class="section">
+        <!--Lista ordenada para enseñar al usuario a usar la página.-->
+        <h2>Empieza a descubrir productos en esta página.</h2>
+
+        <article class="section__article">
+            <div>
+                <p>Te enseñamos a navegar por <strong>Wish-it</strong>.</p>
+
+                <ol>
+                    <li>
+                        <p>Navega por
+                            <a href="index.html">Descubrir</a>
+                            y dale like a los productos que te gusten. Nuestro algoritmo te hará <strong>recomendaciones
+                                personalizadas</strong>!
+                        </p>
+                    </li>
+                    <li>
+                        <p><strong>Categoriza los productos que te gusten</strong> y agrúpalos en cuantas listas se te
+                            ocurran.
+                            Luego dirígete a
+                            <a href="./assets/pages/mis_listas.html">Mis listas</a>
+                            para administrarlas y modificarlas a tu gusto.
+                        </p>
+                    </li>
+                    <li>
+                        <p><strong>Comparte</strong> tus listas con tus amigos y mira las de ellos en
+                            <a href="./assets/pages/amigos.html">Amigos</a>.
+                        </p>
+                    </li>
+                    <li>
+                        <p>Házle a tus amigos y seres queridos el regalo que más desean. <strong>Incluso puedes
+                                participar
+                                en un regalo en conjunto entre varias personas!</strong>
+                        </p>
+                    </li>
+                </ol>
+            </div>
+        </article>
+
+        <div>
+            <h3 style="font-size: large; font-family: 'Comfortaa';">Empieza a Descubrir!</h3>
+        </div>
+
+        <div class="catalogue">
+            <!--Aquí se muestran las imagenes de los productos que se venderán en la página.-->
+            <div class="catalogue__productBox">
+                <img class="catalogue__productBox__image" src="./assets/images/beach_bag.jpeg" alt="Bolsa de playa"
+                    id="bolsaplaya">
+                <h1 class="catalogue__productBox__name">Bolsa de playa</h1>
+                <p class="catalogue__productBox__seller"><strong>Vendedor:</strong> Zara</p>
+                <p class="catalogue__productBox__price"><strong>Precio:</strong> $600</p>
+            </div>
+            <div class="catalogue__productBox">
+                <img class="catalogue__productBox__image" src="./assets/images/collar.jpeg" alt="Collar" id="collar">
+                <h1 class="catalogue__productBox__name">Collar</h1>
+                <p class="catalogue__productBox__seller"><strong>Vendedor:</strong> Pandora</p>
+                <p class="catalogue__productBox__price"><strong>Precio:</strong> $1,600</p>
+            </div>
+            <div class="catalogue__productBox">
+                <img class="catalogue__productBox__image" src="./assets/images/joyeria.jpeg" alt="Joyería" id="joyeria">
+                <h1 class="catalogue__productBox__name">Set de joyas</h1>
+                <p class="catalogue__productBox__seller"><strong>Vendedor:</strong> Tous</p>
+                <p class="catalogue__productBox__price"><strong>Precio:</strong> $2,500</p>
+            </div>
+            <div class="catalogue__productBox">
+                <img class="catalogue__productBox__image" src="./assets/images/nintendo.jpeg" alt="Nintendo Switch"
+                    id="nintendo">
+                <h1 class="catalogue__productBox__name">Nintendo Switch</h1>
+                <p class="catalogue__productBox__seller"><strong>Vendedor:</strong> Game Planet</p>
+                <p class="catalogue__productBox__price"><strong>Precio:</strong> $6,000</p>
+            </div>
+            <div class="catalogue__productBox">
+                <img class="catalogue__productBox__image" src="./assets/images/pastel_abejas.jpeg" alt="Pastel de abejas"
+                    id="abejas">
+                <h1 class="catalogue__productBox__name">Pastel de abejas</h1>
+                <p class="catalogue__productBox__seller"><strong>Vendedor:</strong> Pasteles Honey</p>
+                <p class="catalogue__productBox__price"><strong>Precio:</strong> $500</p>
+            </div>
+            <div class="catalogue__productBox">
+                <img class="catalogue__productBox__image" src="./assets/images/pastel_pinguinos.jpeg" alt="Pastel de pingüinos"
+                    id="pinguinos">
+                <h1 class="catalogue__productBox__name">Pastel de pingüinos</h1>
+                <p class="catalogue__productBox__seller"><strong>Vendedor:</strong> Pasteles Honey</p>
+                <p class="catalogue__productBox__price"><strong>Precio:</strong> $550</p>
+            </div>
+            </article>
+        </div>
+
+
+        <hr>
+        <!--Esta sección redirecciona al formulario de registro.-->
+        <article style="font-family: 'Comfortaa';">
+            <h3>¿Te interesa empezar a regalar o recibir los regalos perfectos?</h3>
+            <h4>Regístrate
+                <a href="./assets/pages/contacto.html">aquí</a>.
+            </h4>
+        </article>
+
+        <a href="#header" style="font-family: 'Comfortaa';">Ir al inicio de la página.</a>
+
+        <br>
+    </section>
+
+
+
+    <footer id="footer">
+        <h5>Redes sociales</h5>
+        <small>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates, quod. Corporis sunt hic libero
+            atque cumque ut nam ipsa obcaecati illo aspernatur adipisci ullam, minus deleniti accusamus? Consequatur,
+            sit earum.</small>
+    </footer>
+
+</body>
+
+</html>
