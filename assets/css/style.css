@@ -25,22 +25,24 @@ header {
     grid-area: header;
     background-color: white;
     /* rgb(136, 198, 206);*/
-    display: grid;
+    /*display: grid;
     grid-template-columns: 5rem 10rem 1fr 7fr 2fr;
     grid-template-rows: 1fr 1fr;
-    grid-template-areas: ". . . tagline ." "menu_icon logo . searchbar admin";
+    grid-template-areas: ". . . tagline ." "menu_icon logo . searchbar admin";*/
 }
 
-#tagline {
-    margin-top: 10px;
+#tagline p {
+    margin-top: 0px;
     margin-bottom: 0;
     grid-area: tagline;
     align-self: center;
     justify-self: center;
+    text-align: center      ;
     font-size: 35px;
 }
 
 #menu_icon {
+    padding: 0;
     grid-area: menu_icon;
     height: 2.5rem;
     align-self: center;
@@ -48,6 +50,7 @@ header {
 }
 
 #logo {
+    padding: 0;
     grid-area: logo;
     height: 6rem;
     align-self: center;
@@ -67,8 +70,9 @@ header {
 
 #admin {
     margin: 0;
+    padding: 0;
     grid-area: admin;
-    display: flex;
+    display: inline-block;
     height: 6rem;
     align-items: center;
     justify-content: right;
@@ -161,7 +165,11 @@ section article {
     background-color: lightcyan;
 }
 
-section article div {
+.carousel_slide {
+    background-color:teal;
+}
+
+section div div {
     font-size: small;
 }
 
